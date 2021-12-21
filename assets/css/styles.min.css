@@ -43,7 +43,8 @@ footer {
     height: 50vh;
     border-radius: 10px;
     margin: auto;
-    position: relative
+    position: relative;
+    z-index: 5;
 }
 
 .terminal-window header {
@@ -116,7 +117,8 @@ footer {
 }
 
 #scroll-btn {
-    visibility: hidden
+    transform: TranslateY(-150%);
+    z-index: 1;
 }
 
 #scroll-btn:hover {
