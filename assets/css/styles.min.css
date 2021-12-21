@@ -3,6 +3,10 @@
     align-self: center
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .card-column {
     width: 20vw
 }
