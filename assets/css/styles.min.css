@@ -148,7 +148,7 @@ footer {
 
 @media (max-width: 992px) {
     .terminal-window {
-        width: 75vw;
+        width: 80vw;
         right: 10vw
     }
 
@@ -159,7 +159,8 @@ footer {
 
 @media (max-width: 1272px) {
     .terminal-window {
-        width: 65vw;
+        width: 75vw;
+        right: 10vw;
     }
 }
 
