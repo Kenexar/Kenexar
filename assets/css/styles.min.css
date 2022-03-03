@@ -157,6 +157,12 @@ footer {
     }
 }
 
+@media (max-width: 1272px) {
+    .terminal-window {
+        width: 65vw;
+    }
+}
+
 @media (max-width: 574px) {
     .card-first {
         margin-right: 0 !important
