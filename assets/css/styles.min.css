@@ -18,6 +18,11 @@ html {
     padding-top: 200px
 }
 
+.content-section {
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
 .terminal-base {
     background-color: #000;
     height: 5vh;
