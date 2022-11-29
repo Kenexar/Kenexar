@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'endzone';
+    src: url(assets/Scream\ Real.ttf);
+}
+
+body {
+    background-color: #000000;
+    font-family: endzone;
+    overflow: hidden;
+}
+
+.backtohome {
+    position: absolute;
+    bottom: 1vh;
+}
+
+.logo {
+    height: 7vh;
+}
+
+.text-crime {
+    font-size: 2.0rem;
+}
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #FFFFFF;
+    font-family: endzone;
+    transition: all 0.5s;
+    padding: 0 1vw 0 1vw;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-0.1vw);
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #ffffff;
+}
