@@ -1,11 +1,49 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import KenexarLogo from '../assets/img/KenexarLogo.svg';
+import { Image, imageConfig } from 'astro:assets';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import TypeTextAnimation from '../components/animated-text.jsx';
 ---
 
 <Layout>
-	<Welcome />
+	<header class="flex justify-between items-center mx-40 mt-3">
+		<div class="w-52 h-52 absolute top-0 right-20 bg-white blur-[120px] opacity-10 rounded-full"></div>
+		<div class="flex items-center">
+			<Image src={KenexarLogo} alt="Kenexar Logo" width={30} height={30} />
+			<h1 class="text-2xl font-proto text-white drop-shadow-[0px_20px_20px_rgba(255,255,255,0.1)] ml-4 uppercase font-medium">Kenexar.eu</h1>
+		</div>
+		<nav>
+			<ul class="flex gap-10 uppercase font-proto">
+				<li><a href="/" class="text-white">Home</a></li>
+				<li><a href="/about" class="text-white">About</a></li>
+				<li><a href="/projects" class="text-white">projects</a></li>
+				<li><a href="/projects" class="text-white">Member</a></li>
+				<li><a href="/contact" class="text-white">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="mx-40 mt-40 pb-50 text-white">
+		<h1 class="w-150 text-5xl leading-16 uppercase font-light font-proto h-40 flex flex-wrap">
+			<TypeTextAnimation client:only text="Creative Digital\n Solutions Built with\n Passion" />
+		</h1>
+		<p class="w-1/2 mt-10 text-lg font-proto">Since 2020, our dedicated team has been transforming ideas into unique digital experiences, focusing on quality and creativity.</p>
+		<div class="flex gap-5 relative">
+			<button class="mt-10 px-10 py-3 outline-1 transition-colors cursor-pointer outline-white rounded-md text-black uppercase bg-white font-proto hover:bg-neutral-950 hover:text-white">Explore our Projects</button>
+			<button class="mt-10 px-10 py-3 outline-1 transition-colors cursor-pointer outline-white rounded-md text-white uppercase font-proto bg-neutral-950 hover:bg-white hover:text-black">Our Team</button>
+			<div class="w-52 h-52 absolute top-0 left-20 bg-white blur-[120px] opacity-10 rounded-full"></div>
+		</div>
+	</section>
+	<section>
+		<div class="flex justify-between mx-40 mt-40">
+			<div class="w-1/2">
+				<h2 class="text-3xl font-proto text-white">Our Mission</h2>
+				<p class="mt-5 text-lg font-proto text-white">Our mission is to provide the best digital solutions to our clients, focusing on quality and creativity. We are committed to delivering the best results and helping our clients achieve their goals.</p>
+			</div>
+			<div class="w-1/2">
+				<h2 class="text-3xl font-proto text-white">Our Vision</h2>
+				<p class="mt-5 text-lg font-proto text-white">Our vision is to become a leading digital agency in the industry, known for our innovative solutions and exceptional customer service. We aim to create long-lasting relationships with our clients and help them succeed in the digital world.</p>
+			</div>
+		</div>
+	</section>
 </Layout>
